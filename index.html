@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Shopping List</title>
+</head>
+<body>
+  <div class="shopping-list">
+    <form class="shopping">
+      <button class="addBtn" type="button">+</button>
+      <input class="searchbar" type="text" name="item" id="name" placeholder="Add Item">
+    </form>
+    <ul class="list">
+    </ul>
+    <div class="collapsible hidden">
+      <div class="collapse">&#x276F;</div>
+      <span class="checked-items-count"></span>
+      <button class="option">&#xfe19;</button>
+    </div>
+    <ul class="checked-items-list hidden">
+    </ul>   
+    <ul class="options-dropdown hidden">
+      <li><button class="uncheck-all" type="button">Uncheck all items</button></li>
+      <li><button class="delete-all" type="button">Delete checked items</button></li>
+    </ul>
+  </div>
+
+  <div class="overlay hidden"></div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
